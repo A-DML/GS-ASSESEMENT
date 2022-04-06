@@ -2,30 +2,24 @@
   <div class="flex"> 
     <div class="greyswtich w-1/2" >
       <!-- <div>logo</div> -->
-      <img alt="GreySwitch" src="@/assets/images/landingp1.png" />
+      <img alt="GreySwitch" src="@/assets/images/landingp2.png" />
 
     </div>
 
   <div class="w-1/2 bg-white-500">
     <form action="#">
-      <Signup
-      class="mb-10"
-            icon="mail-outline"
-            label="Email Address"
-            type="email"
-            v-model="email"
-    />
+    
     </form>
   </div>
+  <User />
     </div> 
 </template>
 <script>
-import Signup from './components/Signup.vue'
-// import User from './components/User.vue'
+import User from './components/User.vue'
 export default {
   name: 'App',
   components: {
-    Signup
+    User,
   }
 }
 </script>
